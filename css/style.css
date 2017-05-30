@@ -32,6 +32,8 @@ h2{
 .main-header #logo{
     width:45%;
     margin: 10px 0px;
+    display:block;
+    transition: width 2s;
 }
 
 .main-header .main-nav{
@@ -73,6 +75,7 @@ h2{
     width: 70%;
     float:left;
     overflow:auto;
+    transition: width 1s;
 }
 
 #content article{
@@ -143,6 +146,13 @@ footer p{
         margin:auto;
         display:block;
         width:65%;
+        transition: width 2s;
+    }
+
+    .main-header #main-nav{
+        display:block;
+        transition: height 2s;
+
     }
 
     #content {
@@ -181,6 +191,7 @@ footer p{
         display:block;
         width:99%;
         overflow:hidden;
+        transition: width 1s;
     }
 
     .main-header .main-nav ul{
@@ -241,6 +252,7 @@ footer p{
         margin:auto;
         display:block;
         width:95%;
+        transition: width 2s;
     }
 
     .main-header .main-nav{
