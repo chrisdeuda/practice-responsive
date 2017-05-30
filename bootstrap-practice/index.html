@@ -16,6 +16,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $('#tooltip1').tooltip('hide');
+            $('#tooltip2').tooltip('hide');
+
+
+
+        });
+    </script>
     <![endif]-->
 </head>
 <body>
@@ -40,18 +51,18 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a</li>
-                    <li><a href="#">About</a></li>
+                    <li class="active"><a href="index.html">Home</a</li>
+                    <li><a href="about.html">About</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Innovate <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Learn</a></li>
-                            <li><a href="#">Create</a></li>
-                            <li><a href="#">Teach</a></li>
+                            <li><a href="innovate.html">Learn</a></li>
+                            <li><a href="innovate.html">Create</a></li>
+                            <li><a href="innovate.html">Teach</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
@@ -86,14 +97,16 @@
             <div class="col-md-4">
                 <div class="bluebox">
                     <h3> <span class="glyphicon glyphicon-book"> </span> Learn...</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <a href="#" id="tooltip1" data-toggle="tooltip" title="This is first tool tip!">Ut enim ad minim veniam, quis nostrud ex</a></p>
                     <a href="#" class="readmore">Read More..</a>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="redbox">
                     <h3><span class="glyphicon glyphicon-eye-open"> </span> Create...</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        <a href="#"  id="tooltip2" data-toggle="tooltip" title="This is 2nc tool tip!">labore et dolore magna aliqua</a>. Ut enim ad minim veniam, quis nostrud ex</p>
                     <a href="#" class="readmore">Read More..</a>
                 </div>
             </div>
